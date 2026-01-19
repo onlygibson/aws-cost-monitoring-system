@@ -31,3 +31,23 @@ I updated the Lambda IAM execution role by attaching AWS-managed billing permiss
 **Outcome:**  
 The system now successfully generates automated weekly cost reports, reinforcing proper IAM least-privilege configuration and service-to-service access in AWS.
 
+## AWS Services Used
+
+- **AWS Budgets** – Monitors monthly AWS spending and triggers alerts at defined cost thresholds.
+- **AWS Cost Explorer** – Provides detailed cost and usage data used for reporting and analysis.
+- **Amazon SNS** – Sends real-time cost alert notifications via email or SMS.
+- **AWS Lambda** – Automates weekly cost report generation using serverless execution.
+- **Amazon S3** – Securely stores generated cost reports.
+- **Amazon EventBridge** – Schedules the Lambda function to run automatically on a weekly basis.
+- **AWS IAM** – Manages permissions and enforces least-privilege access between services.
+
+## How to Run / Reproduce
+
+1. Enable AWS Cost Explorer in the Billing Dashboard.
+2. Create an AWS Budget with cost thresholds (50%, 80%, 100%).
+3. Configure Amazon SNS with email or SMS subscriptions.
+4. Attach the SNS topic to AWS Budget alerts.
+5. Create an S3 bucket for storing cost reports.
+6. Deploy the Lambda function with permissions to access Cost Explorer and S3.
+7. Schedule the Lambda function using Amazon EventBridge to run weekly.
+8. Verify alerts by temporarily lowering the budget threshold.
