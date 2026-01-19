@@ -16,3 +16,18 @@ AWS Services
 → Amazon SNS (Email/SMS Alerts)  
 → AWS Lambda (Weekly Cost Report Automation)  
 → Amazon S3 (Cost Report Storage)
+
+## Challenges & Resolution
+
+**Challenge:**  
+While testing the Lambda function that generates weekly cost reports, the function failed with an `AccessDeniedException` when calling the AWS Cost Explorer API (`GetCostAndUsage`).
+
+**Root Cause:**  
+The IAM role attached to the Lambda function did not have permission to access AWS Cost Explorer. By default, Lambda execution roles do not include billing or cost management permissions.
+
+**Resolution:**  
+I updated the Lambda IAM execution role by attaching AWS-managed billing permissions that allow Cost Explorer access (`ce:GetCostAndUsage`). After updating the role, the Lambda function executed successfully and was able to retrieve cost data and store the report in Amazon S3.
+
+**Outcome:**  
+The system now successfully generates automated weekly cost reports, reinforcing proper IAM least-privilege configuration and service-to-service access in AWS.
+
