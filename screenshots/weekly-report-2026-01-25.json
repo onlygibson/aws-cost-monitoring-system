@@ -1,0 +1,116 @@
+{
+  "ResultsByTime": [
+    {
+      "TimePeriod": {
+        "Start": "2026-01-18",
+        "End": "2026-01-19"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-19",
+        "End": "2026-01-20"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-20",
+        "End": "2026-01-21"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-21",
+        "End": "2026-01-22"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-22",
+        "End": "2026-01-23"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-23",
+        "End": "2026-01-24"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-01-24",
+        "End": "2026-01-25"
+      },
+      "Total": {
+        "UnblendedCost": {
+          "Amount": "0.0000000001",
+          "Unit": "USD"
+        }
+      },
+      "Groups": [],
+      "Estimated": true
+    }
+  ],
+  "DimensionValueAttributes": [],
+  "ResponseMetadata": {
+    "RequestId": "f6f160de-f9d3-4e45-b5db-c52a89767716",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "date": "Sun, 25 Jan 2026 20:21:34 GMT",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "1095",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f6f160de-f9d3-4e45-b5db-c52a89767716",
+      "cache-control": "no-cache"
+    },
+    "RetryAttempts": 0
+  }
+}
