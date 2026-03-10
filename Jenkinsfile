@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/onlygibson/aws-cost-monitoring-system.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo "Building application..."
@@ -27,5 +21,14 @@ pipeline {
             }
         }
 
+    }
+
+    post {
+        success {
+            echo 'Pipeline executed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
     }
 }
