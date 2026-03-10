@@ -5,30 +5,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building application..."
+                sh 'echo Building application...'
             }
         }
 
         stage('Test') {
             steps {
-                echo "Running tests..."
+                sh 'echo Running tests...'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploying application..."
+                sh 'echo Deploying application...'
             }
         }
 
-    }
-
-    post {
-        success {
-            echo 'Pipeline executed successfully!'
-        }
-        failure {
-            echo 'Pipeline failed!'
-        }
     }
 }
